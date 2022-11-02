@@ -1,7 +1,7 @@
 import React from 'react';
 import { useStateContext } from '../contexts/ContextProvider';
 
-// eslint-disable-next-line arrow-body-style
+
 export const Button = ({ icon, bgColor, color, bgHoverColor, size, text, borderRadius, width }) => {
   const { setIsClicked, initialState } = useStateContext();
   return (
