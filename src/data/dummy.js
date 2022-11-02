@@ -14,6 +14,7 @@ import avatar from './avatar.jpg';
 import avatar2 from './avatar2.jpg';
 import avatar3 from './avatar3.png';
 import avatar4 from './avatar4.jpg';
+import avatar5 from './avatar5.jpg';
 import product1 from './product1.jpg';
 import product2 from './product2.jpg';
 import product3 from './product3.jpg';
@@ -1489,6 +1490,16 @@ export const customersData = [
 ];
 
 export const employeesData = [
+  {
+    EmployeeID: 0,
+    Name: 'William Mosquera',
+    Title: 'Software Developer',
+    HireDate: '14/06/2022',
+    Country: 'Colombia',
+    ReportsTo: 'Carson',
+    EmployeeImage:
+    avatar5,
+  },
   {
     EmployeeID: 1,
     Name: 'Nancy Davolio',
