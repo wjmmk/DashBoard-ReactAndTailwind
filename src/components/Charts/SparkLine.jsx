@@ -1,7 +1,7 @@
 import React from 'react';
 import { SparklineComponent, Inject, SparklineTooltip } from '@syncfusion/ej2-react-charts';
 
-// eslint-disable-next-line arrow-body-style
+
 export const SparkLine = ({ id, height, width, color, data, type, currentColor }) => {
   return (
     <SparklineComponent
