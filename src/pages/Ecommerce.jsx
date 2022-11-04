@@ -8,7 +8,7 @@ import { useStateContext } from '../contexts/ContextProvider';
 export const Ecommerce = () => {
   const { currentColor } = useStateContext();
   return (
-    <div className="mt-1 bg-violet-400">
+    <div className="mt-1 bg-violet-200">
       <div className="flex flex-wrap lg:flex-nowrap justify-center">
         <div
           className="bg-white dark:text-gray-200 dark:bg-secondary-dark-bg h-44 rounded-xl w-full lg:w-80 p-8 pt-9 m-3 bg-hero-pattern bg-no-repeat bg-cover bg-center"
@@ -19,7 +19,7 @@ export const Ecommerce = () => {
               <p className="text-2xl">$63,448.78</p>
             </div>
             <button
-              type="button"
+              type={currentColor}
               style={{ backgroundColor: currentColor }}
               className="text-2xl opacity-0.9 text-white hover:drop-shadow-xl rounded-full p-4"
             >
@@ -29,7 +29,7 @@ export const Ecommerce = () => {
           <div className="mt-6">
             <Button
               color="white"
-              bgColor="blue"
+              bgColor={currentColor}
               text="Download"
               borderRadius="10px"
               size="md"
@@ -42,7 +42,7 @@ export const Ecommerce = () => {
           {earningData.map((item) => (
             <div key={item.title} className="bg-white h-44 dark:text-gray-200 dark:bg-secondary-dark-bg md:w-56 p-4 pt-9 rounded-2xl ">
               <button
-                type="button"
+                type={currentColor}
                 style={{ color: item.iconColor, backgroundColor: item.iconBg }}
                 className="text-2xl opacity-0.9 rounded-full  p-4 hover:drop-shadow-xl"
               >
@@ -110,7 +110,7 @@ export const Ecommerce = () => {
               <div className="mt-10">
                 <Button
                   color="white"
-                  bgColor="blue"
+                  bgColor={currentColor}
                   text="Download Report"
                   borderRadius="10px"
                 />

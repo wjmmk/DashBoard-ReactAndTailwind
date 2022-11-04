@@ -1,4 +1,3 @@
-/* eslint-disable react/jsx-no-constructed-context-values */
 import React, { createContext, useContext, useState } from 'react';
 
 const StateContext = createContext();
@@ -21,6 +20,8 @@ export const ContextProvider = ({ children }) => {
   const setMode = (e) => {
     setCurrentMode(e.target.value);
     localStorage.setItem('themeMode', e.target.value);
+
+    setThemeSettings(false)
   };
 
   const setColor = (color) => {
@@ -32,7 +33,24 @@ export const ContextProvider = ({ children }) => {
 
   return (
     <StateContext.Provider
-      value={{ currentColor, currentMode, activeMenu, screenSize, setScreenSize, handleClick, isClicked, initialState, setIsClicked, setActiveMenu, setCurrentColor, setCurrentMode, setMode, setColor, themeSettings, setThemeSettings }}
+      value={{ 
+        currentColor, 
+        currentMode, 
+        activeMenu, 
+        screenSize, 
+        setScreenSize, 
+        handleClick, 
+        isClicked, 
+        initialState, 
+        setIsClicked, 
+        setActiveMenu, 
+        setCurrentColor, 
+        setCurrentMode, 
+        setMode, 
+        setColor, 
+        themeSettings, 
+        setThemeSettings 
+      }}
     >
       {children}
     </StateContext.Provider>
