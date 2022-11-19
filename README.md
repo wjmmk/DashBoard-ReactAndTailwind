@@ -6,3 +6,6 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 
 ## Image Employees
 ![](https://github.com/wjmmk/DashBoard-ReactAndTailwind/blob/main/public/employe.png)
+
+## Image Graphic
+![](https://github.com/wjmmk/DashBoard-ReactAndTailwind/blob/main/public/graphic.png)
